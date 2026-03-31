@@ -7,5 +7,6 @@ def test_hello_world():
     client = app.test_client()
     response = client.get("/hello_world")
 
+    # Print Statements do not work in pytest environment unless explicitly run the actual test script in python
     assert response.status_code == 200
     assert response.get_json() == {"hello": "world"}

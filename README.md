@@ -21,3 +21,4 @@ In another terminal:
 - you should see the proper JSON response ()
 
 # How to Pass a Test
+- run pytest
