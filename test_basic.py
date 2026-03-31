@@ -2,3 +2,4 @@
 
 def test_basic():
     assert 1 == 1
+    print("Passed the basic test that 1 == 1!")
