@@ -21,11 +21,15 @@ def fetch_users():
 
 if __name__ == "__main__":
     response = fetch_users()
+
+    # In Code Test Network
+
     assert 1 == 1
     print("Pass 1 == 1")
     assert response.status_code == 200
     print("Pass Status Code 200")
     assert response.json() == {"hello": "world"}
     print("Pass Data Contains Hello World")
+
     data = response.json()
     print(data)
